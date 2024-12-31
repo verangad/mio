@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="../static/banner.css"/>
+        <link rel="stylesheet" th:href="@{/banner.css}"/>
+    </head>
+    <body>
+        <!-- Banner -->
+		<section id="banner">
+		</section>
+
+        <section class="wrapper style2">
+            <div class="container">
+                <header class="major">
+                    <h2>A gigantic heading you can use for whatever</h2>
+                    <p>With a much smaller subtitle hanging out just below it</p>
+                </header>
+            </div>
+        </section>
+
+        <div th:replace="~{./fragments/stats-bar :: stats-bar}"></div>
+    </body>
+    hu
+    
+</html>

@@ -1,0 +1,27 @@
+.stats-bar
+{
+    width: 100%;
+}
+
+ul 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+li 
+{
+    display: inline;
+}
+
+input
+{
+    width: 100px;
+}
+
+.stack-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
