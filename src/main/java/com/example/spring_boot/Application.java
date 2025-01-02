@@ -1,6 +1,8 @@
 package com.example.springboot;
 
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,9 +19,15 @@ public class Application {
 
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+
+		@Autowired
+		ItemRepository itemRepo;
+		
+		List<Proficiencies> itemList = new ArrayList<Proficiencies>();
 		return args -> {
 
 			System.out.println("Let's inspect the beans provided by Spring Boot:");
+			itemRepo.save(new Proficiencies("0", "Guitar", "English"));
 
 		};
 	}
