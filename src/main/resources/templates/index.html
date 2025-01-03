@@ -6,11 +6,10 @@
         <title>Test</title>
         <link rel="stylesheet" href="../static/banner.css"/>
         <link rel="stylesheet" th:href="@{/banner.css}"/>
+        <link rel="stylesheet" th:href="@{/fragments/banner.css}"/>
     </head>
     <body>
-        <!-- Banner -->
-		<section id="banner">
-		</section>
+        <img th:src="@{/img/banner.jpg}" class="banner">
 
         <section class="wrapper style2">
             <div class="container">
@@ -22,6 +21,7 @@
         </section>
 
         <div th:replace="~{./fragments/stats-bar :: stats-bar}"></div>
+        <div th:replace="~{./fragments/proficiencies :: proficiencies}"></div>
     </body>
     hu
     

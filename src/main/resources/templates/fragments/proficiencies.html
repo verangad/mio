@@ -1,16 +1,20 @@
 <div th:fragment="proficiencies">
+    <link rel="stylesheet" th:href="@{/fragments/proficiencies.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
     <link rel="stylesheet" href="../../static/fragments/proficiencies.css"/>
-    <form class="stats-bar">
-        <section class="">
-            <ul>
-                <li>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+    <form class="">
+        <div class="proficiencies-box">
+            <ul class="stack-container">
+                <li class="stack-container">
                     PROFICIENCIES
-                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                    <textarea class="proficiencies-textbox"></textarea>
                 </li>
-                <li>
+                <li class="stack-container">
                     LANGUAGES
-                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                    <textarea class="proficiencies-textbox"></textarea>
                 </li>
-        </section>
+            </ul>
+        </div>
     </form>
 </div>

@@ -1,8 +1,12 @@
 <div th:fragment="stats-bar">
   <div th:fragment="stats-bar">
       <link rel="stylesheet" th:href="@{/fragments/statsbar.css}"/>
+      <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+      <link rel="stylesheet" href="../../static/fragments/statsbar.css"/>
+      <link rel="stylesheet" href="../../static/fragments/shared.css"/>
       <form class="">
           <section class="">
+            <div class="stats-box">
               <ul class="stats-bar">
                 <li>
                   <div class="stack-container">
@@ -35,6 +39,7 @@
                   </div>
                 </li>
               </ul>
+            </div>
           </section>
       </form>
   </div>

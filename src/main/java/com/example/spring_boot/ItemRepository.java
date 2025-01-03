@@ -1,7 +1,8 @@
 package com.example.spring_boot;
 
+import com.example.spring_boot.models.Proficiencies;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.core.mapping.Query;
+import org.springframework.data.mongodb.repository.Query;
 
 public interface ItemRepository extends MongoRepository<Proficiencies, String> {
 	

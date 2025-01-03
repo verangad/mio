@@ -1,0 +1,26 @@
+textarea {
+    background-attachment: local;
+    background-image:
+        linear-gradient(to right, #F0EAFE 10px, transparent 10px),
+        linear-gradient(to left, #F0EAFE 10px, transparent 10px),
+        repeating-linear-gradient(#F0EAFE, #F0EAFE 30px, #ccc 30px, #ccc 31px, #F0EAFE 31px);
+    line-height: 31px;
+    padding: 8px 10px;
+}
+
+.proficiencies-box
+{
+    width: 400px;
+    background-color: white;
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+}
+
+.proficiencies-textbox
+{
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+    border-radius: 5px;
+}

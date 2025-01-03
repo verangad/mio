@@ -1,0 +1,6 @@
+.stack-container
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
