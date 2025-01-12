@@ -1,23 +1,39 @@
 <div th:fragment="spellcasting">
     <link rel="stylesheet" href="../../static/fragments/spellcasting.css"/>
-    <form class="spellcasting">
-        <section class="">
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+    <form class="spellcasting-box">
+        <div class="spellcasting-box">
             SPELLCASTING
-            <ul>
-              <li>
-                <label for="class"></label><input name="class" placeholder="0" />
-                <label for="class">SC ABILITY</label><input name="class" placeholder="0" />
-              </li>
-              <li>
-                <label for="class"></label><input name="class" placeholder="0" />
-                <label for="level">SPELL DC</label><input name="level" placeholder="0" />
-              </li>
-              <li>
-                <label for="class"></label><input name="class" placeholder="0" />
-                <label for="race">ATK BONUS</label><input name="race" placeholder="0" />
-              </li>
-              <li>
-            </ul>
-        </section>
+            <div class="stack-container-left">
+                <div class="horizontal-container">
+                    <input class="value" name="class" placeholder="0" />
+                    <div class="stack-container">
+                        <label for="">SC ABILITY</label>
+                        <input class="bottom-box" name="class" placeholder="0" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-container-left">
+                <div class="horizontal-container">
+                    <input class="value" name="class" placeholder="0" />
+                    <div class="stack-container">
+                        <label for="">SPELL DC</label>
+                        <input class="bottom-box" name="level" placeholder="0" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-container-left">
+                <div class="horizontal-container">
+                    <input class="value" name="class" placeholder="0" />
+                    <div class="stack-container">
+                        <label for="">ATK BONUS</label>
+                        <input class="bottom-box" name="race" placeholder="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
 </div>

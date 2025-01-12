@@ -1,0 +1,17 @@
+<div th:fragment="sidebar">
+    <link rel="stylesheet" th:href="@{/fragments/proficiencies.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/saving-throws.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/spellcasting.css}"/>
+    <link rel="stylesheet" href="../../static/fragments/proficiencies.css"/>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+    <link rel="stylesheet" href="../../static/fragments/saving-throws.css"/>
+    <link rel="stylesheet" href="../../static/fragments/spellcasting.css"/>
+
+    <div class="stack-container">
+        <div th:replace="~{./fragments/saving-throws :: saving-throws}"></div>
+        <div th:replace="~{./fragments/spellcasting :: spellcasting}"></div>
+        <div th:replace="~{./fragments/proficiencies :: proficiencies}"></div>
+    </div>
+
+</div>

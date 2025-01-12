@@ -1,0 +1,40 @@
+<div th:fragment="battle-stats">
+    <link rel="stylesheet" th:href="@{/fragments/battle-stats.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+    <link rel="stylesheet" href="../../static/fragments/battle-stats.css"/>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+
+    <div class="stack-container">
+        <div th:replace="~{./fragments/status :: status}"></div>
+        <div class="horizontal-container">
+            <div class="stats">
+                <div class="stack-container">
+                    <input />
+                    AC
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stack-container">
+                    <input />
+                    INIT
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stack-container">
+                    <input />
+                    SPD
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stack-container">
+                    <label>MAX:</label><input />
+                    <input />
+                    HITDICE
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-container">
+
+        </div>
+    </div>
+</div>

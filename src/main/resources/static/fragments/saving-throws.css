@@ -1,0 +1,21 @@
+ul
+{
+    list-style-type: none;
+}
+
+.value
+{
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+    width: 40px;
+    background-color: #FCEDFF;
+}
+
+.saving-throws-box
+{
+    width: 150px;
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+}
