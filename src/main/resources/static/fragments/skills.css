@@ -11,3 +11,19 @@
 .skill-checkbox:hover {
     background-color: #ccc;
 }
+
+.skills-box
+{
+    width: 230px;
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+}
+
+.skill-value
+{
+    width: 30px;
+    border: none;
+    border-color: #9C51CB;
+    border-bottom: 1px solid;
+}
