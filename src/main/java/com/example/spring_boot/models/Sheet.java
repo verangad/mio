@@ -3,16 +3,16 @@ package com.example.spring_boot.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("User")
-public class User {
+@Document("Sheet")
+public class Sheet {
 
     @Id
     private String id;
-    private Sheet sheet;
+    private Proficiencies proficiencies;
 
-    public User(String id, Sheet sheet) {
+    public Sheet(String id, Proficiencies proficiencies) {
         super();
         this.id = id;
-        this.sheet = sheet;
+        this.proficiencies = proficiencies;
     }
 }

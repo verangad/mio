@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.example.spring_boot.ItemRepository;
 import com.example.spring_boot.models.Proficiencies;
+import com.example.spring_boot.models.Sheet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +19,8 @@ public class Application {
 
 	@Autowired
 	ItemRepository itemRepo;
+	@Autowired
+	SheetRepository sheetRepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
@@ -27,10 +30,10 @@ public class Application {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		
 		List<Proficiencies> itemList = new ArrayList<Proficiencies>();
+		sheetRepo.save(new Sheet("0", new Proficiencies("1","Guitar", "English")));
 		return args -> {
 
 			System.out.println("Let's inspect the beans provided by Spring Boot:");
-			itemRepo.save(new Proficiencies("0", "Guitar", "English"));
 
 		};
 	}

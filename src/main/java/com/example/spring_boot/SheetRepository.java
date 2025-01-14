@@ -5,10 +5,10 @@ import com.example.spring_boot.models.Sheet;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-public interface ItemRepository extends MongoRepository<Proficiencies, String> {
+public interface SheetRepository extends MongoRepository<Sheet, String> {
 
-	@Query("{id:'?0'}")
-	Proficiencies findItemById(String id);
-	
-	public long count();
+    @Query("{id:'?0'}")
+    Sheet getSheetById(String id);
+
+    public long count();
 }
