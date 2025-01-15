@@ -21,7 +21,19 @@
         </section>
 
         <div th:replace="~{./fragments/stats-bar :: stats-bar}"></div>
-        <div th:replace="~{./fragments/proficiencies :: proficiencies}"></div>
+
+        <div class="horizontal-container">
+            <div class="stack-container">
+            </div>
+            <div class="stack-container">
+            </div>
+            <div class="stack-container">
+                <div th:replace="~{./fragments/saving-throws :: saving-throws}"></div>
+                <div th:replace="~{./fragments/spellcasting :: spellcasting}"></div>
+                <div th:replace="~{./fragments/proficiencies :: proficiencies}"></div>
+            </div>
+        </div>
+
     </body>
     hu
     

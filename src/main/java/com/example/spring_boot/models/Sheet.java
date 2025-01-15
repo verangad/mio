@@ -10,9 +10,23 @@ public class Sheet {
     private String id;
     private Proficiencies proficiencies;
 
-    public Sheet(String id, Proficiencies proficiencies) {
-        super();
+    public String getId()
+    {
+        return this.id;
+    }
+
+    public Proficiencies getProficiencies()
+    {
+        return this.proficiencies;
+    }
+
+    public void setId(String id)
+    {
         this.id = id;
+    }
+
+    public void setProficiencies(Proficiencies proficiencies)
+    {
         this.proficiencies = proficiencies;
     }
 }

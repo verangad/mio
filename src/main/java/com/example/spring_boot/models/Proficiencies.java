@@ -6,16 +6,39 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document("Proficiencies")
 public class Proficiencies {
 
-		@Id
-		private String id;
+	@Id
+	private String id;
 
-		private String proficiencies;
-		private String languages;
-		
-		public Proficiencies(String id, String proficiencies, String languages) {
-			super();
-			this.id = id;
-			this.proficiencies = proficiencies;
-			this.languages = languages;
-		}
+	private String proficiencies;
+	private String languages;
+
+	public String getId()
+	{
+		return this.id;
+	}
+
+	public String getProficiencies()
+	{
+		return this.proficiencies;
+	}
+
+	public String getLanguages()
+	{
+		return this.languages;
+	}
+
+	public void setId(String id)
+	{
+		this.id = id;
+	}
+
+	public void setProficiencies(String proficiencies)
+	{
+		this.proficiencies = proficiencies;
+	}
+
+	public void setLanguages(String languages)
+	{
+		this.languages = languages;
+	}
 }

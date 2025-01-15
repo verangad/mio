@@ -19,8 +19,10 @@ textarea {
 
 .proficiencies-textbox
 {
+    width: 100%;
     border-style: solid;
     border-color: #9C51CB;
     border-width: 2px;
     border-radius: 5px;
+    resize: none;
 }

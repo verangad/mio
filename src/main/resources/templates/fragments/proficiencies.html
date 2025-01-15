@@ -8,11 +8,15 @@
             <div class="stack-container">
                 <div class="stack-container">
                     PROFICIENCIES
-                    <textarea class="proficiencies-textbox"></textarea>
+                    <form th:action="@{sheet}" th:object="${sheet}" method="get">
+                        <textarea th:field="*{proficiencies.proficiencies}" class="proficiencies-textbox"></textarea>
+                    </form>
                 </div>
                 <div class="stack-container">
                     LANGUAGES
-                    <textarea class="proficiencies-textbox"></textarea>
+                    <form th:action="@{sheet}" th:object="${sheet}" method="get">
+                        <textarea th:field="*{proficiencies.languages}" class="proficiencies-textbox"></textarea>
+                    </form>
                 </div>
             </div>
         </div>
