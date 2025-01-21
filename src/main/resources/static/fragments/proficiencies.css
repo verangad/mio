@@ -7,22 +7,3 @@ textarea {
     line-height: 31px;
     padding: 8px 10px;
 }
-
-.proficiencies-box
-{
-    width: 400px;
-    background-color: white;
-    border-style: solid;
-    border-color: #9C51CB;
-    border-width: 2px;
-}
-
-.proficiencies-textbox
-{
-    width: 100%;
-    border-style: solid;
-    border-color: #9C51CB;
-    border-width: 2px;
-    border-radius: 5px;
-    resize: none;
-}

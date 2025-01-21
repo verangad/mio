@@ -3,22 +3,20 @@
     <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
     <link rel="stylesheet" href="../../static/fragments/proficiencies.css"/>
     <link rel="stylesheet" href="../../static/fragments/shared.css"/>
-    <form class="">
-        <div class="proficiencies-box">
+    <script th:src="@{/js/test.js}"></script>
+
+    <div class="box">
+        <form th:action="@{sheet}" th:object="${sheet}" method="get">
             <div class="stack-container">
                 <div class="stack-container">
                     PROFICIENCIES
-                    <form th:action="@{sheet}" th:object="${sheet}" method="get">
-                        <textarea th:field="*{proficiencies.proficiencies}" class="proficiencies-textbox"></textarea>
-                    </form>
+                        <textarea th:field="*{proficiencies.proficiencies}" class="textarea" onchange="testFunction()"></textarea>
                 </div>
                 <div class="stack-container">
                     LANGUAGES
-                    <form th:action="@{sheet}" th:object="${sheet}" method="get">
-                        <textarea th:field="*{proficiencies.languages}" class="proficiencies-textbox"></textarea>
-                    </form>
+                    <textarea th:field="*{proficiencies.languages}" class="textarea"></textarea>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>

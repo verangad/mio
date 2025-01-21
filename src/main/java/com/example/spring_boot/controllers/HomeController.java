@@ -31,11 +31,11 @@ public class HomeController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/sheet", method = RequestMethod.GET)
-	public String getSheet(Model model) {
-		System.out.println("TESTTTTTTTTTTTTTTTTTTTTTTT");
-		model.addAttribute("Sheet", this.sheetRepository.getSheetById("0"));
-		return "sheet";
+	@RequestMapping(value = "/update", method = RequestMethod.POST)
+	public String updateSheet(@RequestBody Sheet sheet) {
+		System.out.println();
+		System.out.println(sheet.toString());
+		return "index";
 	}
 
 }

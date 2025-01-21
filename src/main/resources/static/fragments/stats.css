@@ -1,0 +1,21 @@
+.proficiency-bonus
+{
+    width: 230px;
+    height: 70px;
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.stat-box
+{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 10px;
+}

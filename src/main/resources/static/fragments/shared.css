@@ -1,4 +1,6 @@
-.stack-container
+.stack-container,
+#right-container,
+#main-container
 {
     text-align: center;
     display: flex;
@@ -16,4 +18,58 @@
 {
     display: flex;
     flex-direction: row;
+}
+
+.content-wrapper
+{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-container-right
+{
+    width: 650px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.left-container
+{
+    width: 230px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.main-container
+{
+    width: 400px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.right-container
+{
+    width: 200px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.box
+{
+    width: 100%;
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+    background-color: white;
+}
+
+.input-details
+{
+    width: 30px;
+}
+
+.textarea
+{
+    resize: vertical;
 }

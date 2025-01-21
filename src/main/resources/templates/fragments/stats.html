@@ -1,0 +1,73 @@
+<div th:fragment="stats">
+    <link rel="stylesheet" th:href="@{/fragments/stats.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+    <link rel="stylesheet" href="../../static/fragments/stats.css"/>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+
+    <div class="stack-container">
+        <form th:action="@{sheet}" th:object="${sheet}" method="get">
+            <div class="stack-container">
+                <input th:field="*{details.characterName}" id="characterName" />
+                <input th:field="*{details.atName}" id="atName" />
+                <input th:field="*{details.age}" id="age" /><label for="age">AGE:</label><br>
+                <input th:field="*{details.height}" id="height" /><label for="height">HEIGHT:</label><br>
+                <input th:field="*{details.weight}" id="weight" /><label for="weight">WEIGHT:</label><br>
+            </div>
+
+            <div class="proficiency-bonus">
+                <div class="stack-container">
+                    <input th:field="*{stats.proficiencyBonus}" />
+                    Proficiency Bonus
+                </div>
+            </div>
+
+            <div class="horizontal-container">
+                <div class="stat-box">
+                    <div class="stack-container">
+                        str
+                        <input th:field="*{stats.strength.x}" />
+                        <input th:field="*{stats.strength.x}" />
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stack-container">
+                        dex
+                        <input th:field="*{stats.dexterity.x}" />
+                        <input th:field="*{stats.dexterity.y}" />
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stack-container">
+                        con
+                        <input th:field="*{stats.constitution.x}" />
+                        <input th:field="*{stats.constitution.y}" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="horizontal-container">
+                <div class="stat-box">
+                    <div class="stack-container">
+                        int
+                        <input th:field="*{stats.intelligence.x}" />
+                        <input th:field="*{stats.intelligence.y}" />
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stack-container">
+                        wis
+                        <input th:field="*{stats.wisdom.x}" />
+                        <input th:field="*{stats.wisdom.y}" />
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stack-container">
+                        cha
+                        <input th:field="*{stats.charisma.x}" />
+                        <input th:field="*{stats.charisma.y}" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

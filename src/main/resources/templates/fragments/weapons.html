@@ -1,0 +1,48 @@
+<div th:fragment="weapons">
+    <link rel="stylesheet" th:href="@{/fragments/weapons.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+    <link rel="stylesheet" href="../../static/fragments/weapons.css"/>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+
+    <div class="box">
+        <form th:action="@{sheet}" th:object="${sheet}" method="get">
+            <div class="stack-container">
+                <div th:replace="~{./fragments/status :: status}"></div>
+                <div class="weapons-box">
+                    <div class="horizontal-container">
+                        <div class="stack-container">
+                            WEAPONS
+                            <th:block th:each="weapon: *{bag.weapons}">
+                                <td><input th:value="${weapon.name}" class="input-details" name="" /></td>
+                            </th:block>
+                        </div>
+                        <div class="stack-container">
+                            ATK
+                            <th:block th:each="weapon: *{bag.weapons}">
+                                <td><input th:value="${weapon.attack}" class="input-details" name="" /></td>
+                            </th:block>
+                        </div>
+                        <div class="stack-container">
+                            DMG
+                            <th:block th:each="weapon: *{bag.weapons}">
+                                <td><input th:value="${weapon.damage}" class="input-details" name="" /></td>
+                            </th:block>
+                        </div>
+                        <div class="stack-container">
+                            TYPE
+                            <th:block th:each="weapon: *{bag.weapons}">
+                                <td><input th:value="${weapon.type}" class="input-details" name="" /></td>
+                            </th:block>
+
+                        </div>
+                        <div class="stack-container">
+                            <textarea></textarea>
+                            <input class="input-details"  name="" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

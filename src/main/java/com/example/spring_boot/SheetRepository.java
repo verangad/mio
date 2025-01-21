@@ -1,6 +1,5 @@
 package com.example.spring_boot;
 
-import com.example.spring_boot.models.Proficiencies;
 import com.example.spring_boot.models.Sheet;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;

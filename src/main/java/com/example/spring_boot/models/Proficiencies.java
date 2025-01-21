@@ -1,20 +1,17 @@
 package com.example.spring_boot.models;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("Proficiencies")
 public class Proficiencies {
 
-	@Id
-	private String id;
-
 	private String proficiencies;
 	private String languages;
 
-	public String getId()
+	public Proficiencies()
 	{
-		return this.id;
+		this.proficiencies = "Default proficiencies";
+		this.languages = "Default languages";
 	}
 
 	public String getProficiencies()
@@ -27,11 +24,6 @@ public class Proficiencies {
 		return this.languages;
 	}
 
-	public void setId(String id)
-	{
-		this.id = id;
-	}
-
 	public void setProficiencies(String proficiencies)
 	{
 		this.proficiencies = proficiencies;
@@ -40,5 +32,10 @@ public class Proficiencies {
 	public void setLanguages(String languages)
 	{
 		this.languages = languages;
+	}
+
+	public String toString()
+	{
+		return this.getProficiencies() + "\n" + this.getLanguages() + "\n";
 	}
 }

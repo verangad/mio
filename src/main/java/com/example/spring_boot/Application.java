@@ -30,7 +30,8 @@ public class Application {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		
 		List<Proficiencies> itemList = new ArrayList<Proficiencies>();
-
+		Sheet sheet = new Sheet("0");
+		sheetRepo.save(sheet);
 		return args -> {
 
 			System.out.println("Let's inspect the beans provided by Spring Boot:");

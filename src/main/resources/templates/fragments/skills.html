@@ -3,101 +3,102 @@
     <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
     <link rel="stylesheet" href="../../static/fragments/skills.css"/>
     <link rel="stylesheet" href="../../static/fragments/shared.css"/>
-    <form class="skills-module">
-        <div class="skills-box">
+
+    <div class="skills-box">
+        <form th:action="@{sheet}" th:object="${sheet}" method="get">
             <div class="stack-container">
                 <div class="horizontal-container">
-                    <input type="checkbox"><span class="skill-checkbox"></span>
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Acrobatics">Acrobatics <span class="skill">(Dex)</span></label>
+                    <input th:checked="*{skills.acrobatics.y}" name="Acrobatics-prof" type="checkbox" />
+                    <input th:field="*{skills.acrobatics.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Acrobatics">Acrobatics<span class="skill">(Dex)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Animal Handling-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Animal Handling">Animal Handling <span class="skill">(Wis)</span></label>
+                    <input th:checked="*{skills.animalHandling.y}" name="Animal Handling-prof" type="checkbox" />
+                    <input th:field="*{skills.animalHandling.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Animal Handling">Animal Handling<span class="skill">(Wis)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Arcana-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Arcana">Arcana <span class="skill">(Int)</span></label>
+                    <input th:checked="*{skills.arcana.y}" name="Arcana-prof" type="checkbox" />
+                    <input th:field="*{skills.arcana.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Arcana">Arcana<span class="skill">(Int)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Athletics-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Athletics">Athletics <span class="skill">(Str)</span></label>
+                    <input th:checked="*{skills.athletics.y}" name="Athletics-prof" type="checkbox" />
+                    <input th:field="*{skills.athletics.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Athletics">Athletics<span class="skill">(Str)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Deception-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Deception">Deception <span class="skill">(Cha)</span></label>
+                    <input th:checked="*{skills.deception.y}" name="Deception-prof" type="checkbox" />
+                    <input th:field="*{skills.deception.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Deception">Deception<span class="skill">(Cha)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="History-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="History">History <span class="skill">(Int)</span></label>
+                    <input th:checked="*{skills.history.y}" name="History-prof" type="checkbox" />
+                    <input th:field="*{skills.history.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="History">History<span class="skill">(Int)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Insight-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Insight">Insight <span class="skill">(Wis)</span></label>
+                    <input th:checked="*{skills.insight.y}" name="Insight-prof" type="checkbox" />
+                    <input th:field="*{skills.insight.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Insight">Insight<span class="skill">(Wis)</span></label>
                     </div>
                 <div class="horizontal-container">
-                    <input name="Intimidation-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Intimidation">Intimidation <span class="skill">(Cha)</span></label>
+                    <input th:checked="*{skills.intimidation.y}" name="Intimidation-prof" type="checkbox" />
+                    <input th:field="*{skills.intimidation.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Intimidation">Intimidation<span class="skill">(Cha)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Investigation-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Investigation">Investigation <span class="skill">(Int)</span></label>
+                    <input th:checked="*{skills.investigation.y}" name="Investigation-prof" type="checkbox" />
+                    <input th:field="*{skills.investigation.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Investigation">Investigation<span class="skill">(Int)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Medicine-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Medicine">Medicine <span class="skill">(Wis)</span></label>
+                    <input th:checked="*{skills.medicine.y}" name="Medicine-prof" type="checkbox" />
+                    <input th:field="*{skills.medicine.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Medicine">Medicine<span class="skill">(Wis)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Nature-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Nature">Nature <span class="skill">(Int)</span></label>
+                    <input th:checked="*{skills.nature.y}" name="Nature-prof" type="checkbox" />
+                    <input th:field="*{skills.nature.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Nature">Nature<span class="skill">(Int)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Perception-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Perception">Perception <span class="skill">(Wis)</span></label>
+                    <input th:checked="*{skills.perception.y}" name="Perception-prof" type="checkbox" />
+                    <input th:field="*{skills.perception.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Perception">Perception<span class="skill">(Wis)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Performance-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Performance">Performance <span class="skill">(Cha)</span></label>
+                    <input th:checked="*{skills.performance.y}" name="Performance-prof" type="checkbox" />
+                    <input th:field="*{skills.performance.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Performance">Performance<span class="skill">(Cha)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Persuasion-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Persuasion">Persuasion <span class="skill">(Cha)</span></label>
+                    <input th:checked="*{skills.persuasion.y}" name="Persuasion-prof" type="checkbox" />
+                    <input th:field="*{skills.persuasion.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Persuasion">Persuasion<span class="skill">(Cha)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Religion-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Religion">Religion <span class="skill">(Int)</span></label>
+                    <input th:checked="*{skills.religion.y}" name="Religion-prof" type="checkbox" />
+                    <input th:field="*{skills.religion.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Religion">Religion<span class="skill">(Int)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Sleight of Hand-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Sleight of Hand">Sleight of Hand <span class="skill">(Dex)</span></label>
+                    <input th:checked="*{skills.sleightOfHand.y}" name="Sleight of Hand-prof" type="checkbox" />
+                    <input th:field="*{skills.sleightOfHand.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Sleight of Hand">Sleight of Hand<span class="skill">(Dex)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Stealth-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Stealth">Stealth <span class="skill">(Dex)</span></label>
+                    <input th:checked="*{skills.stealth.y}" name="Stealth-prof" type="checkbox" />
+                    <input th:field="*{skills.stealth.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Stealth">Stealth<span class="skill">(Dex)</span></label>
                 </div>
                 <div class="horizontal-container">
-                    <input name="Survival-prof" type="checkbox" />
-                    <input class="skill-value" placeholder="+0" type="text" />
-                    <label for="Survival">Survival <span class="skill">(Wis)</span></label>
+                    <input th:checked="*{skills.survival.y}" name="Survival-prof" type="checkbox" />
+                    <input th:field="*{skills.survival.x}" class="skill-value" placeholder="+0" type="text" />
+                    <label for="Survival">Survival<span class="skill">(Wis)</span></label>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 

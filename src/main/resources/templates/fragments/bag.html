@@ -1,0 +1,33 @@
+<div th:fragment="bag">
+    <link rel="stylesheet" th:href="@{/fragments/bag.css}"/>
+    <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+    <link rel="stylesheet" href="../../static/fragments/bag.css"/>
+    <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+
+    <div class="box">
+        <form th:action="@{sheet}" th:object="${sheet}" method="get">
+            <div class="stack-container">
+                <div th:replace="~{./fragments/status :: status}"></div>
+                <textarea class="textarea" th:field="*{bag.contents}"></textarea>
+                <div class="horizontal-container">
+                    <div class="horizontal-container">
+                        <img src="../../static/img/banner.jpg" width="20" height="20">
+                        <input th:field="*{bag.copper}" class="input-details" />
+                    </div>
+                    <div class="horizontal-container">
+                        <img src="../../static/img/banner.jpg" width="20" height="20">
+                        <input th:field="*{bag.silver}" class="input-details" />
+                    </div>
+                    <div class="horizontal-container">
+                        <img src="../../static/img/banner.jpg" width="20" height="20">
+                        <input th:field="*{bag.electrum}" class="input-details" />
+                    </div>
+                    <div class="horizontal-container">
+                        <img src="../../static/img/banner.jpg" width="20" height="20">
+                        <input th:field="*{bag.platinum}" class="input-details" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

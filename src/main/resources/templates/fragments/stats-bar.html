@@ -1,46 +1,45 @@
 <div th:fragment="stats-bar">
-  <div th:fragment="stats-bar">
-      <link rel="stylesheet" th:href="@{/fragments/statsbar.css}"/>
-      <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
-      <link rel="stylesheet" href="../../static/fragments/statsbar.css"/>
-      <link rel="stylesheet" href="../../static/fragments/shared.css"/>
-      <form class="">
-          <section class="">
-            <div class="stats-box">
-              <ul class="stats-bar">
-                <li>
-                  <div class="stack-container">
-                    <label for="followers">FOLLOWERS</label>
-                    <input name="num-followers" placeholder="0" />
-                  </div>
-                </li>
-                <li>
-                  <div class="stack-container">
-                    <label for="class">CLASS</label>
-                    <input name="class" placeholder="0" />
-                  </div>
-                </li>
-                <li>
-                  <div class="stack-container">
-                    <label for="level">LEVEL</label>
-                    <input name="level" placeholder="0" />
-                  </div>
-                </li>
-                <li>
-                  <div class="stack-container">
-                    <label for="race">RACE</label>
-                    <input name="race" placeholder="0" />
-                  </div>
-                </li>
-                <li>
-                  <div class="stack-container">
-                    <label for="alignment">ALIGNMENT</label>
-                    <input name="alignment" placeholder="0" />
-                  </div>
-                </li>
-              </ul>
+  <link rel="stylesheet" th:href="@{/fragments/statsbar.css}"/>
+  <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
+  <link rel="stylesheet" href="../../static/fragments/statsbar.css"/>
+  <link rel="stylesheet" href="../../static/fragments/shared.css"/>
+
+  <script th:src="@{/js/image-upload.js}"></script>
+
+  <div class="stats-bar">
+    <form th:action="@{sheet}" th:object="${sheet}" method="get">
+      <div class="center-wrapper">
+        <div class="content-wrapper">
+          <div class="pfp-wrapper">
+            <div id="pfpBox" class="pfp">
+              <input type="file" id="pfp-upload" accept="image/*">
             </div>
-          </section>
-      </form>
+          </div>
+          <div class="horizontal-container-right">
+            <div class="stack-container">
+              <label for="alignment">ALIGNMENT</label>
+              <input th:field="*{details.alignment}" class="stats-input" name="alignment" placeholder="0" />
+            </div>
+            <div class="stack-container">
+              <label for="race">RACE</label>
+              <input th:field="*{details.race}" class="stats-input" name="race" placeholder="0" />
+            </div>
+            <div class="stack-container">
+              <label for="level">LEVEL</label>
+              <input th:field="*{details.level}" class="stats-input" name="level" placeholder="0" />
+            </div>
+            <div class="stack-container">
+              <label for="class">CLASS</label>
+              <input th:field="*{details.classType}" class="stats-input" name="class" placeholder="0" />
+            </div>
+            <div class="stack-container">
+              <label for="followers">FOLLOWERS</label>
+              <input th:field="*{details.followers}" class="stats-input" name="num-followers" placeholder="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
+
 </div>

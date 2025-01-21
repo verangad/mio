@@ -3,38 +3,34 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
         <link rel="stylesheet" href="../static/banner.css"/>
         <link rel="stylesheet" th:href="@{/banner.css}"/>
         <link rel="stylesheet" th:href="@{/fragments/banner.css}"/>
     </head>
-    <body>
-        <img th:src="@{/img/banner.jpg}" class="banner">
 
-        <section class="wrapper style2">
-            <div class="container">
-                <header class="major">
-                    <h2>A gigantic heading you can use for whatever</h2>
-                    <p>With a much smaller subtitle hanging out just below it</p>
-                </header>
-            </div>
-        </section>
+    <body>
+        <div class="banner">
+        </div>
 
         <div th:replace="~{./fragments/stats-bar :: stats-bar}"></div>
 
-        <div class="horizontal-container">
-            <div class="stack-container">
-            </div>
-            <div class="stack-container">
-            </div>
-            <div class="stack-container">
-                <div th:replace="~{./fragments/saving-throws :: saving-throws}"></div>
-                <div th:replace="~{./fragments/spellcasting :: spellcasting}"></div>
-                <div th:replace="~{./fragments/proficiencies :: proficiencies}"></div>
+        <div class="center-wrapper">
+            <div class="horizontal-container">
+                <div class="left-container">
+                    <div th:replace="~{./fragments/stats :: stats}"></div>
+                    <div th:replace="~{./fragments/skills :: skills}"></div>
+                </div>
+                <div class="main-container">
+                    <div th:replace="~{./fragments/battle-stats :: battle-stats}"></div>
+                    <div th:replace="~{./fragments/weapons :: weapons}"></div>
+                    <div th:replace="~{./fragments/bag :: bag}"></div>
+                </div>
+                <div class="right-container">
+                    <div th:replace="~{./fragments/saving-throws :: saving-throws}"></div>
+                    <div th:replace="~{./fragments/spellcasting :: spellcasting}"></div>
+                    <div th:replace="~{./fragments/proficiencies :: proficiencies}"></div>
+                </div>
             </div>
         </div>
-
     </body>
-    hu
-    
 </html>

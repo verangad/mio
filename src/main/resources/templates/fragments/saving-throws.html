@@ -3,35 +3,36 @@
     <link rel="stylesheet" th:href="@{/fragments/shared.css}"/>
     <link rel="stylesheet" href="../../static/fragments/shared.css"/>
     <link rel="stylesheet" th:href="@{/fragments/saving-throws.css}"/>
-    <form class="stats-bar">
-        <div class="saving-throws-box">
-            SAVING THROWS
+
+    <div class="box">
+        <form th:action="@{sheet}" th:object="${sheet}" method="get">
+        SAVING THROWS
             <div class="stack-container-left">
               <div>
-                <input type="checkbox">
-                <input class="value" name="" placeholder="0" /><label for="">STR</label>
+                <input type="checkbox" th:checked="*{savingThrows.strength.y}">
+                <input th:field="*{savingThrows.strength.x}" class="value" name="" placeholder="0" /><label for="">STR</label>
               </div>
               <div>
-                <input type="checkbox">
-                <input class="value" name="" placeholder="0" /><label for="">DEX</label>
+                <input type="checkbox" th:checked="*{savingThrows.dexterity.y}">
+                <input th:field="*{savingThrows.dexterity.x}" class="value" name="" placeholder="0" /><label for="">DEX</label>
               </div>
               <div>
-                <input type="checkbox">
-                <input class="value" name="" placeholder="0" /><label for="">CON</label>
+                <input type="checkbox" th:checked="*{savingThrows.constitution.y}">
+                <input th:field="*{savingThrows.constitution.x}" class="value" name="" placeholder="0" /><label for="">CON</label>
               </div>
               <div>
-                <input type="checkbox">
-                <input class="value" name="" placeholder="0" /><label for="">INT</label>
+                <input type="checkbox" th:checked="*{savingThrows.intelligence.y}">
+                <input th:field="*{savingThrows.intelligence.x}" class="value" name="" placeholder="0" /><label for="">INT</label>
               </div>
               <div>
-                <input type="checkbox">
-                <input class="value" name="" placeholder="0" /><label for="">WIS</label>
+                <input type="checkbox" th:checked="*{savingThrows.wisdom.y}">
+                <input th:field="*{savingThrows.wisdom.x}" class="value" name="" placeholder="0" /><label for="">WIS</label>
               </div>
               <div>
-                <input type="checkbox">
-                <input class="value" name="" placeholder="0" /><label for="">CHA</label>
+                <input type="checkbox" th:checked="*{savingThrows.charisma.y}">
+                <input th:field="*{savingThrows.charisma.x}" class="value" name="" placeholder="0" /><label for="">CHA</label>
               </div>
-            </ul>
-        </div>
-    </form>
+            </div>
+        </form>
+    </div>
 </div>

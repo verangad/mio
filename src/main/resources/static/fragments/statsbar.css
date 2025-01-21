@@ -1,7 +1,19 @@
-.stats-box
+.pfp
 {
+    position: absolute;
+    top: -125px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+}
 
-
+.pfp-wrapper
+{
+    width: 250px;
+    position: relative;
 }
 
 .stats-bar
@@ -22,7 +34,7 @@ li
     display: inline;
 }
 
-input
+.stats-input
 {
     text-align: center;
     width: 100px;
