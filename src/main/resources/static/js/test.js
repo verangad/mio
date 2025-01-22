@@ -4,12 +4,8 @@ function testFunction()
     fetch("/update", {
       method: "POST",
       body: JSON.stringify({
-        id: 1,
-        proficiencies: {
-            id: "0",
-            proficiencies: "test",
-            languages: "test2"
-        },
+        proficiencies: "test",
+        languages: "test2",
         completed: false
       }),
       headers: {
