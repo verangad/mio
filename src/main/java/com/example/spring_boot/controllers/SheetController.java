@@ -78,5 +78,50 @@ public class SheetController {
             System.out.println("Failed to update.");
 
     }
+
+    @RequestMapping(value = "/updateDetails", method = RequestMethod.POST)
+    public void updateDetails(@RequestBody Details details) {
+
+        Sheet sheet = sheetRepository.getSheetById("0");
+
+        sheet.setDetails(details);
+        Sheet updated = sheetRepository.save(sheet);
+
+        if(updated != null)
+            System.out.println("Successfully updated.");
+        else
+            System.out.println("Failed to update.");
+
+    }
+
+    @RequestMapping(value = "/updateStats", method = RequestMethod.POST)
+    public void updateStats(@RequestBody Stats stats) {
+
+        Sheet sheet = sheetRepository.getSheetById("0");
+
+        sheet.setStats(stats);
+        Sheet updated = sheetRepository.save(sheet);
+
+        if(updated != null)
+            System.out.println("Successfully updated.");
+        else
+            System.out.println("Failed to update.");
+
+    }
+
+    @RequestMapping(value = "/updateSkills", method = RequestMethod.POST)
+    public void updateSkills(@RequestBody Skills skills) {
+
+        Sheet sheet = sheetRepository.getSheetById("0");
+
+        sheet.setSkills(skills);
+        Sheet updated = sheetRepository.save(sheet);
+
+        if(updated != null)
+            System.out.println("Successfully updated.");
+        else
+            System.out.println("Failed to update.");
+
+    }
 }
 

@@ -1,11 +1,7 @@
 package com.example.spring_boot.models;
 
-import org.springframework.data.annotation.Id;
 
 public class Skills {
-    @Id
-    private String id;
-
     private Tuple<String, Boolean> acrobatics;
     private Tuple<String, Boolean> animalHandling;
     private Tuple<String, Boolean> arcana;
@@ -29,7 +25,7 @@ public class Skills {
 
     public Skills()
     {
-        this.acrobatics = new Tuple<>("+0",false);
+        this.acrobatics = new Tuple<>("+1",true);
         this.animalHandling = new Tuple<>("+0",false);
         this.arcana = new Tuple<>("+0",false);
         this.athletics = new Tuple<>("+0",false);
@@ -78,39 +74,39 @@ public class Skills {
     }
     public void setAnimalHandling(Tuple<String, Boolean> animalHandling)
     {
-        this.acrobatics = animalHandling;
+        this.animalHandling = animalHandling;
     }
     public void setArcana(Tuple<String, Boolean> arcana)
     {
-        this.acrobatics = arcana;
+        this.arcana = arcana;
     }
     public void setAthletics(Tuple<String, Boolean> athletics)
     {
-        this.acrobatics = athletics;
+        this.athletics = athletics;
     }
     public void setDeception(Tuple<String, Boolean> deception)
     {
-        this.acrobatics = deception;
+        this.deception = deception;
     }
     public void setHistory(Tuple<String, Boolean> history)
     {
-        this.acrobatics = history;
+        this.history = history;
     }
     public void setInsight(Tuple<String, Boolean> insight)
     {
-        this.acrobatics = insight;
+        this.insight = insight;
     }
     public void setIntimidation(Tuple<String, Boolean> intimidation)
     {
-        this.acrobatics = intimidation;
+        this.intimidation = intimidation;
     }
     public void setInvestigation(Tuple<String, Boolean> investigation)
     {
-        this.acrobatics = investigation;
+        this.investigation = investigation;
     }
     public void setMedicine(Tuple<String, Boolean> medicine)
     {
-        this.acrobatics = medicine;
+        this.medicine = medicine;
     }
     public void setNature(Tuple<String, Boolean> nature)
     {
@@ -118,38 +114,38 @@ public class Skills {
     }
     public void setNavigation(Tuple<String, Boolean> navigation)
     {
-        this.acrobatics = navigation;
+        this.navigation = navigation;
     }
     public void setPerception(Tuple<String, Boolean> perception)
     {
-        this.acrobatics = perception;
+        this.perception = perception;
     }
     public void setPerformance(Tuple<String, Boolean> performance)
     {
-        this.acrobatics = performance;
+        this.performance = performance;
     }
     public void setPersuasion(Tuple<String, Boolean> persuasion)
     {
-        this.acrobatics = persuasion;
+        this.persuasion = persuasion;
     }
     public void setReligion(Tuple<String, Boolean> religion)
     {
-        this.acrobatics = religion;
+        this.religion = religion;
     }
     public void setSleightOfHand(Tuple<String, Boolean> sleightOfHand)
     {
-        this.acrobatics = sleightOfHand;
+        this.sleightOfHand = sleightOfHand;
     }
     public void setStealth(Tuple<String, Boolean> stealth)
     {
-        this.acrobatics = stealth;
+        this.stealth = stealth;
     }
     public void setSurvival(Tuple<String, Boolean> survival)
     {
-        this.acrobatics = survival;
+        this.survival = survival;
     }
     public void setPassiveWisdom(Tuple<String, Boolean> passiveWisdom)
     {
-        this.acrobatics = passiveWisdom;
+        this.passiveWisdom = passiveWisdom;
     }
 }

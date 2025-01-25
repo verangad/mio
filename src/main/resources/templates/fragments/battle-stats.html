@@ -11,28 +11,28 @@
                 <div class="horizontal-container">
                     <div class="stats">
                         <div class="stack-container">
-                            <input th:field="*{stats.armorClass}" />
+                            <input th:field="*{stats.armorClass}" id="armorClass" onchange="updateStats()" />
                             AC
                         </div>
                     </div>
                     <div class="stats">
                         <div class="stack-container">
-                            <input th:field="*{stats.initiative}" />
+                            <input th:field="*{stats.initiative}" id="initiative" onchange="updateStats()" />
                             INIT
                         </div>
                     </div>
                     <div class="stats">
                         <div class="stack-container">
-                            <input th:field="*{stats.speed}" />
+                            <input th:field="*{stats.speed}" id="speed" onchange="updateStats()" />
                             SPD
                         </div>
                     </div>
                     <div class="stats">
                         <div class="stack-container">
                             <div class="horizontal-container">
-                                <label>MAX:</label><input th:field="*{stats.hitDice.y}" />
+                                <label>MAX:</label><input th:field="*{stats.hitDice.y}" id="maxHitDice" onchange="updateStats()" />
                             </div>
-                            <input th:field="*{stats.hitDice.x}" />
+                            <input th:field="*{stats.hitDice.x}" id="hitDice" onchange="updateStats()" />
                             HITDICE
                         </div>
                     </div>
@@ -44,12 +44,12 @@
                     </div>
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">
-                        <input th:field="*{stats.health.x}" class="input-details"/>
-                        <input th:field="*{stats.health.y}" class="input-details"/>
+                        <input th:field="*{stats.health.x}" id="health" class="input-details" onchange="updateStats()" />
+                        <input th:field="*{stats.health.y}" id="maxHealth" class="input-details" onchange="updateStats()" />
                     </div>
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">
-                        <input th:field="*{stats.tempHealth}" class="input-details"/>
+                        <input th:field="*{stats.tempHealth}" id="tempHealth" class="input-details" onchange="updateStats()" />
                     </div>
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">

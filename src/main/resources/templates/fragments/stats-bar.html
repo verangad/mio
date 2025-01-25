@@ -18,23 +18,23 @@
           <div class="horizontal-container-right">
             <div class="stack-container">
               <label for="alignment">ALIGNMENT</label>
-              <input th:field="*{details.alignment}" class="stats-input" name="alignment" placeholder="0" />
+              <input th:field="*{details.alignment}" class="stats-input" id="alignment" name="alignment" placeholder="0" onchange="updateDetails()" />
             </div>
             <div class="stack-container">
               <label for="race">RACE</label>
-              <input th:field="*{details.race}" class="stats-input" name="race" placeholder="0" />
+              <input th:field="*{details.race}" class="stats-input" id="race" name="race" placeholder="0" onchange="updateDetails()" />
             </div>
             <div class="stack-container">
               <label for="level">LEVEL</label>
-              <input th:field="*{details.level}" class="stats-input" name="level" placeholder="0" />
+              <input th:field="*{details.level}" class="stats-input" id="level" name="level" placeholder="0" onchange="updateDetails()" />
             </div>
             <div class="stack-container">
               <label for="class">CLASS</label>
-              <input th:field="*{details.classType}" class="stats-input" name="class" placeholder="0" />
+              <input th:field="*{details.classType}" class="stats-input" id="class" name="class" placeholder="0" onchange="updateDetails()" />
             </div>
             <div class="stack-container">
               <label for="followers">FOLLOWERS</label>
-              <input th:field="*{details.followers}" class="stats-input" name="num-followers" placeholder="0" />
+              <input th:field="*{details.followers}" class="stats-input" id="followers" name="num-followers" placeholder="0" onchange="updateDetails()" />
             </div>
           </div>
         </div>
