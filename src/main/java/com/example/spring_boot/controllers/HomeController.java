@@ -1,7 +1,7 @@
 package com.example.spring_boot.controllers;
 
 import com.example.spring_boot.ItemRepository;
-import com.example.spring_boot.SheetRepository;
+import com.example.spring_boot.ISheetRepository;
 import com.example.spring_boot.models.Proficiencies;
 import com.example.spring_boot.models.Sheet;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +24,9 @@ public class HomeController {
 	MongoTemplate mongoTemplate;
 
 	private final ItemRepository repository;
-	private final SheetRepository sheetRepository;
+	private final ISheetRepository sheetRepository;
 
-	HomeController(ItemRepository repository, SheetRepository sheetRepository)
+	HomeController(ItemRepository repository, ISheetRepository sheetRepository)
 	{
 		this.repository = repository;
 		this.sheetRepository = sheetRepository;

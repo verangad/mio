@@ -20,7 +20,7 @@ public class Application {
 	@Autowired
 	ItemRepository itemRepo;
 	@Autowired
-	SheetRepository sheetRepo;
+	ISheetRepository sheetRepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);

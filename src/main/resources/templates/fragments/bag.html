@@ -8,23 +8,23 @@
         <form th:action="@{sheet}" th:object="${sheet}" method="get">
             <div class="stack-container">
                 <div th:replace="~{./fragments/status :: status}"></div>
-                <textarea class="textarea" th:field="*{bag.contents}"></textarea>
+                <textarea class="textarea" id="bag" th:field="*{bag.contents}" onchange="updateBag()"></textarea>
                 <div class="horizontal-container">
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">
-                        <input th:field="*{bag.copper}" class="input-details" />
+                        <input th:field="*{bag.copper}" id="copper" class="input-details" onchange="updateBag()" />
                     </div>
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">
-                        <input th:field="*{bag.silver}" class="input-details" />
+                        <input th:field="*{bag.silver}" id="silver" class="input-details" onchange="updateBag()" />
                     </div>
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">
-                        <input th:field="*{bag.electrum}" class="input-details" />
+                        <input th:field="*{bag.electrum}" id="electrum" class="input-details" onchange="updateBag()" />
                     </div>
                     <div class="horizontal-container">
                         <img src="../../static/img/banner.jpg" width="20" height="20">
-                        <input th:field="*{bag.platinum}" class="input-details" />
+                        <input th:field="*{bag.platinum}" id="platinum" class="input-details" onchange="updateBag()" />
                     </div>
                 </div>
             </div>

@@ -10,11 +10,11 @@
             <div class="stack-container">
                 <div class="stack-container">
                     PROFICIENCIES
-                        <textarea th:field="*{proficiencies.proficiencies}" class="textarea" onchange="testFunction()"></textarea>
+                        <textarea th:field="*{proficiencies.proficiencies}" id="proficiencies" class="textarea" onchange="updateProficiencies()"></textarea>
                 </div>
                 <div class="stack-container">
                     LANGUAGES
-                    <textarea th:field="*{proficiencies.languages}" class="textarea"></textarea>
+                    <textarea th:field="*{proficiencies.languages}" id="languages" class="textarea" onchange="updateProficiencies()"></textarea>
                 </div>
             </div>
         </form>

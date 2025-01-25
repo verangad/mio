@@ -9,7 +9,6 @@ public interface ISheetRepository extends MongoRepository<Sheet, String> {
 
     @Query("{id:'?0'}")
     Sheet getSheetById(String id);
-    void updateProficienciesById(Proficiencies proficiencies);
 
     public long count();
 }

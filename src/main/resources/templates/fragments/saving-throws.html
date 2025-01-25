@@ -9,28 +9,28 @@
         SAVING THROWS
             <div class="stack-container-left">
               <div>
-                <input type="checkbox" th:checked="*{savingThrows.strength.y}">
-                <input th:field="*{savingThrows.strength.x}" class="value" name="" placeholder="0" /><label for="">STR</label>
+                <input type="checkbox" th:checked="*{savingThrows.strength.y}" id="strength-checkbox" onchange="updateSavingThrows()" />
+                <input th:field="*{savingThrows.strength.x}" class="value" name="" placeholder="0" id="strength" onchange="updateSavingThrows()" /><label>STR</label>
               </div>
               <div>
-                <input type="checkbox" th:checked="*{savingThrows.dexterity.y}">
-                <input th:field="*{savingThrows.dexterity.x}" class="value" name="" placeholder="0" /><label for="">DEX</label>
+                <input type="checkbox" th:checked="*{savingThrows.dexterity.y}" id="dexterity-checkbox" onchange="updateSavingThrows()" />
+                <input th:field="*{savingThrows.dexterity.x}" class="value" name="" placeholder="0" id="dexterity" onchange="updateSavingThrows()" /><label>DEX</label>
               </div>
               <div>
-                <input type="checkbox" th:checked="*{savingThrows.constitution.y}">
-                <input th:field="*{savingThrows.constitution.x}" class="value" name="" placeholder="0" /><label for="">CON</label>
+                <input type="checkbox" th:checked="*{savingThrows.constitution.y}" id="constitution-checkbox" onchange="updateSavingThrows()" />
+                <input th:field="*{savingThrows.constitution.x}" class="value" name="" placeholder="0" id="constitution" onchange="updateSavingThrows()" /><label>CON</label>
               </div>
               <div>
-                <input type="checkbox" th:checked="*{savingThrows.intelligence.y}">
-                <input th:field="*{savingThrows.intelligence.x}" class="value" name="" placeholder="0" /><label for="">INT</label>
+                <input type="checkbox" th:checked="*{savingThrows.intelligence.y}" id="intelligence-checkbox" onchange="updateSavingThrows()" />
+                <input th:field="*{savingThrows.intelligence.x}" class="value" name="" placeholder="0" id="intelligence" onchange="updateSavingThrows()" /><label>INT</label>
               </div>
               <div>
-                <input type="checkbox" th:checked="*{savingThrows.wisdom.y}">
-                <input th:field="*{savingThrows.wisdom.x}" class="value" name="" placeholder="0" /><label for="">WIS</label>
+                <input type="checkbox" th:checked="*{savingThrows.wisdom.y}" id="wisdom-checkbox" onchange="updateSavingThrows()" />
+                <input th:field="*{savingThrows.wisdom.x}" class="value" name="" placeholder="0" id="wisdom" onchange="updateSavingThrows()" /><label>WIS</label>
               </div>
               <div>
-                <input type="checkbox" th:checked="*{savingThrows.charisma.y}">
-                <input th:field="*{savingThrows.charisma.x}" class="value" name="" placeholder="0" /><label for="">CHA</label>
+                <input type="checkbox" th:checked="*{savingThrows.charisma.y}" id="charisma-checkbox" onchange="updateSavingThrows()" />
+                <input th:field="*{savingThrows.charisma.x}" class="value" name="" placeholder="0" id="charisma" onchange="updateSavingThrows()" /><label>CHA</label>
               </div>
             </div>
         </form>
