@@ -8,11 +8,11 @@
         <form th:action="@{sheet}" th:object="${sheet}" method="get">
             <div class="stack-container">
                 <div class="stack-container">
-                    PROFICIENCIES
-                        <textarea th:field="*{proficiencies.proficiencies}" id="proficiencies" class="textarea" onchange="updateProficiencies()"></textarea>
+                    <div class="header-text">PROFICIENCIES</div>
+                    <textarea th:field="*{proficiencies.proficiencies}" id="proficiencies" class="textarea" onchange="updateProficiencies()"></textarea>
                 </div>
                 <div class="stack-container">
-                    LANGUAGES
+                    <div class="header-text">LANGUAGES</div>
                     <textarea th:field="*{proficiencies.languages}" id="languages" class="textarea" onchange="updateProficiencies()"></textarea>
                 </div>
             </div>

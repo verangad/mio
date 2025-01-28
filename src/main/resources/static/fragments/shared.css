@@ -7,6 +7,31 @@
     flex-direction: column;
 }
 
+.large-input-text
+{
+    font-size: 20px;
+    font-family: PixelMPlus12;
+    src: url("../fonts/PixelMplus12-Regular.ttf");
+}
+
+.header-text
+{
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+}
+
+.value
+{
+    border-style: solid;
+    border-color: #9C51CB;
+    border-width: 2px;
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: #FCEDFF;
+    text-align: center;
+}
+
 .stack-container-left
 {
     text-align: left;
@@ -89,4 +114,19 @@
 .textarea
 {
     resize: vertical;
+}
+
+.star-checkbox
+{
+    display: none;
+}
+
+.bottom-spacer
+{
+    margin-bottom: 5px;
+}
+
+.left-spacer
+{
+    margin-left: 0px;
 }

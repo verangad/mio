@@ -10,11 +10,15 @@
     <form th:action="@{sheet}" th:object="${sheet}" method="get">
       <div class="center-wrapper">
         <div class="content-wrapper">
+
           <div class="pfp-wrapper">
             <div id="pfpBox" class="pfp">
-              <input type="file" id="pfp-upload" accept="image/*">
+              <input type="file" onchange="readURL(this);" />
+              <img id="blah" src="#" alt="your image" />
             </div>
           </div>
+
+
           <div class="horizontal-container-right">
             <div class="stack-container">
               <label for="alignment">ALIGNMENT</label>

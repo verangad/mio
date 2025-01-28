@@ -1,27 +1,12 @@
-var fileInput;
-var pfpWrapper;
 
-window.onload = function() {
-    pfpWrapper = document.getElementById("pfpBox");
-    fileInput = document.getElementById("fileUpload");
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
 
-    pfpWrapper.addEventListener("click", function() {
-      changeImage(this);
-    });
-}
-
-function changeImage(input) {
-    let [file] = fileInput.files
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-    pfpWrapper.src = e.target.result;
+    reader.onload = function (e) {
+      $('#blah').attr('src', e.target.result).width(150).height(200);
     };
 
-    reader.onerror = (err) => {
-     console.error("Error reading file:", err);
-     alert("An error occurred while reading the file.");
-    };
-
-    reader.readAsDataURL(file);
+    reader.readAsDataURL(input.files[0]);
+  }
 }

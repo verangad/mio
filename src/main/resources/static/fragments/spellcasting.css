@@ -3,17 +3,6 @@ ul
     list-style-type: none;
 }
 
-.value
-{
-    border-style: solid;
-    border-color: #9C51CB;
-    border-width: 2px;
-    width: 40px;
-    height: 40px;
-    border-radius: 2px;
-    background-color: #FCEDFF;
-}
-
 .spellcasting-box
 {
     width: 150px;

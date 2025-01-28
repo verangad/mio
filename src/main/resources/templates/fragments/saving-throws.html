@@ -6,31 +6,43 @@
 
     <div class="box">
         <form th:action="@{sheet}" th:object="${sheet}" method="get">
-        SAVING THROWS
+            <div class="header-text">SAVING THROWS</div>
             <div class="stack-container-left">
-              <div>
-                <input type="checkbox" th:checked="*{savingThrows.strength.y}" id="strength-checkbox" onchange="updateSavingThrows()" />
-                <input th:field="*{savingThrows.strength.x}" class="value" name="" placeholder="0" id="strength" onchange="updateSavingThrows()" /><label>STR</label>
+              <div class="bottom-spacer">
+                <input class="star-checkbox" type="checkbox" th:checked="*{savingThrows.strength.y}" id="strength-checkbox" onchange="updateSavingThrows()" />
+                  <label for="strength-checkbox"><img th:src="@{/img/star.png}" /></label>
+                <input th:field="*{savingThrows.strength.x}" class="value large-input-text" name="" placeholder="0" id="strength" onchange="updateSavingThrows()" />
+                  <label th:text="'Strength (' + *{stats.strength.y} + ')'" class="saving-throws-text"></label>
               </div>
-              <div>
-                <input type="checkbox" th:checked="*{savingThrows.dexterity.y}" id="dexterity-checkbox" onchange="updateSavingThrows()" />
-                <input th:field="*{savingThrows.dexterity.x}" class="value" name="" placeholder="0" id="dexterity" onchange="updateSavingThrows()" /><label>DEX</label>
+              <div class="bottom-spacer">
+                <input class="star-checkbox" type="checkbox" th:checked="*{savingThrows.dexterity.y}" id="dexterity-checkbox" onchange="updateSavingThrows()" />
+                  <label for="strength-checkbox"><img th:src="@{/img/star.png}" /></label>
+                <input th:field="*{savingThrows.dexterity.x}" class="value large-input-text" name="" placeholder="0" id="dexterity" onchange="updateSavingThrows()" />
+                  <label th:text="'Dexterity (' + *{stats.dexterity.y} + ')'" class="saving-throws-text"></label>
               </div>
-              <div>
-                <input type="checkbox" th:checked="*{savingThrows.constitution.y}" id="constitution-checkbox" onchange="updateSavingThrows()" />
-                <input th:field="*{savingThrows.constitution.x}" class="value" name="" placeholder="0" id="constitution" onchange="updateSavingThrows()" /><label>CON</label>
+              <div class="bottom-spacer">
+                <input class="star-checkbox" type="checkbox" th:checked="*{savingThrows.constitution.y}" id="constitution-checkbox" onchange="updateSavingThrows()" />
+                  <label for="strength-checkbox"><img th:src="@{/img/star.png}" /></label>
+                <input th:field="*{savingThrows.constitution.x}" class="value large-input-text" name="" placeholder="0" id="constitution" onchange="updateSavingThrows()" />
+                  <label th:text="'Constitution (' + *{stats.constitution.y} + ')'" class="saving-throws-text"></label>
               </div>
-              <div>
-                <input type="checkbox" th:checked="*{savingThrows.intelligence.y}" id="intelligence-checkbox" onchange="updateSavingThrows()" />
-                <input th:field="*{savingThrows.intelligence.x}" class="value" name="" placeholder="0" id="intelligence" onchange="updateSavingThrows()" /><label>INT</label>
+              <div class="bottom-spacer">
+                <input class="star-checkbox" type="checkbox" th:checked="*{savingThrows.intelligence.y}" id="intelligence-checkbox" onchange="updateSavingThrows()" />
+                  <label for="strength-checkbox"><img th:src="@{/img/star.png}" /></label>
+                <input th:field="*{savingThrows.intelligence.x}" class="value large-input-text" name="" placeholder="0" id="intelligence" onchange="updateSavingThrows()" />
+                  <label th:text="'Intelligence (' + *{stats.intelligence.y} + ')'" class="saving-throws-text"></label>
               </div>
-              <div>
-                <input type="checkbox" th:checked="*{savingThrows.wisdom.y}" id="wisdom-checkbox" onchange="updateSavingThrows()" />
-                <input th:field="*{savingThrows.wisdom.x}" class="value" name="" placeholder="0" id="wisdom" onchange="updateSavingThrows()" /><label>WIS</label>
+              <div class="bottom-spacer">
+                <input class="star-checkbox" type="checkbox" th:checked="*{savingThrows.wisdom.y}" id="wisdom-checkbox" onchange="updateSavingThrows()" />
+                  <label for="strength-checkbox"><img th:src="@{/img/star.png}" /></label>
+                <input th:field="*{savingThrows.wisdom.x}" class="value large-input-text" name="" placeholder="0" id="wisdom" onchange="updateSavingThrows()" />
+                  <label th:text="'Wisdom (' + *{stats.wisdom.y} + ')'" class="saving-throws-text"></label>
               </div>
-              <div>
-                <input type="checkbox" th:checked="*{savingThrows.charisma.y}" id="charisma-checkbox" onchange="updateSavingThrows()" />
-                <input th:field="*{savingThrows.charisma.x}" class="value" name="" placeholder="0" id="charisma" onchange="updateSavingThrows()" /><label>CHA</label>
+              <div class="bottom-spacer">
+                <input class="star-checkbox" type="checkbox" th:checked="*{savingThrows.charisma.y}" id="charisma-checkbox" onchange="updateSavingThrows()" />
+                  <label for="strength-checkbox"><img th:src="@{/img/star.png}" /></label>
+                <input th:field="*{savingThrows.charisma.x}" class="value large-input-text" name="" placeholder="0" id="charisma" onchange="updateSavingThrows()" />
+                  <label th:text="'Charisma (' + *{stats.charisma.y} + ')'" class="saving-throws-text"></label>
               </div>
             </div>
         </form>
