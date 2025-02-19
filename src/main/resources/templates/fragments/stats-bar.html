@@ -12,14 +12,15 @@
         <div class="content-wrapper">
 
           <div class="pfp-wrapper">
-            <div id="pfpBox" class="pfp">
-              <input type="file" onchange="readURL(this);" />
-              <img id="blah" src="#" alt="your image" />
+            <div id="pfpBox">
+              <label for="pfpField"><img id="pfp" th:src="@{/img/defaultpfp.png}" class="pfp"/></label>
+              <input type="file" id="pfpField" name="file" accept="image/*" class="file-upload" onchange="readURL(this)">
             </div>
           </div>
 
 
           <div class="horizontal-container-right">
+
             <div class="stack-container">
               <label for="alignment">ALIGNMENT</label>
               <input th:field="*{details.alignment}" class="stats-input" id="alignment" name="alignment" placeholder="0" onchange="updateDetails()" />
